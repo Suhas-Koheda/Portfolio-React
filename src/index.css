@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #FFF5EE;
+  --text-color: #000000;
+  --sec-clr: #F5F5F5;
+  --accent-clr: #FF5722;
+}
+@font-face {
+  font-family: 'Lora'; /* a name to be used later */
+  src: url('../fonts/Lora-VariableFont_wght.ttf'); /* URL to font */
+}
+body {
+  margin: 0;
+  font-family: 'Lora';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:var(--bg-color) ;
+}
+@keyframes Namechanger {
+  0% { content: 'Java Enthusiast'; }
+  33% { content: 'Full Stack Web Developer'; }
+  66% { content: 'Machine Learning Enthusiast'; }
+  100% { content: 'Java Enthusiast'; }
+}
+.Animation:after {
+  display: inline;
+  color: var(--accent-clr);
+  content: 'Suhas Koheda';
+  animation: Namechanger 5s infinite;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
