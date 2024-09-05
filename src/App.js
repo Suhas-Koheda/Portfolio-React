@@ -20,21 +20,21 @@ function App() {
       <img src="   https://cdn-icons-png.flaticon.com/512/10381/10381028.png " alt='Suhas Koheda' className='rounded-full w-10 h-8 object-cover fixed mr-0 right-0 md:hidden' onClick={handleToggle}/>
         <div><h3 className='text-2xl font-serif bg-secclr'>Suhas Koheda</h3></div>
         {isVisible && (
-      <div className="text-center p-12 md:flex md:justify-end gap-28 md:p-0 bg-secclr">
+      <div className="fixed h-screen w-screen text-center p-12 md:flex md:justify-end gap-28 md:p-0 bg-secclr">
                     <div className="p-8 md:p-0">
-                        <a href="#About" className="-content">About Me</a>
+                        <a href="#About" className="-content" onClick={handleToggle}>About Me</a>
                     </div>
                     <div className="p-8 md:p-0">
-                        <a href="#Skills" className="-content">Skills</a>
+                        <a href="#Skills" className="-content" onClick={handleToggle}>Skills</a>
                     </div>
                     <div className="p-8 md:p-0">
-                        <a href="#Projects" className="-content">Projects</a>
+                        <a href="#Projects" className="-content" onClick={handleToggle}>Projects</a>
                     </div>
                     <div className="p-8 md:p-0">
-                        <a href="./Resume.html" className="-content">Resume/CV</a>
+                        <a href="./Resume.html" className="-content" onClick={handleToggle}>Resume/CV</a>
                     </div>
                     <div className="p-8 md:p-0 ">
-                        <a href="./Contact.html" className="-content">Contact Information</a>
+                        <a href="./Contact.html" className="-content" onClick={handleToggle}>Contact Information</a>
                     </div>
                 </div>
         )}
