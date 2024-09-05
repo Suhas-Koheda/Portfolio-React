@@ -3,35 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #FFF5EE;
-  --text-color: #000000;
-  --sec-clr: #F5F5F5;
-  --accent-clr: #FF5722;
+  --bg-color: #1E1E2E; /* Dark background */
+  --text-color: #C9D1D9; /* Light text for contrast */
+  --sec-clr: #2A2B3D; /* Slightly lighter background for sections */
+  --accent-clr: #FF5722; /* Bright accent color */
 }
+
 @font-face {
-  font-family: 'Lora'; /* a name to be used later */
-  src: url('../fonts/Lora-VariableFont_wght.ttf'); /* URL to font */
+  font-family: 'Lora'; /* Custom font */
+  src: url('../fonts/Lora-VariableFont_wght.ttf');
 }
+
 body {
   margin: 0;
-  font-family: 'Lora';
+  font-family: 'Lora', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:var(--bg-color) ;
+  background-color: var(--bg-color);
+  color: var(--text-color); /* Apply text color */
 }
+
 @keyframes Namechanger {
   0% { content: 'Java Enthusiast'; }
   33% { content: 'Full Stack Web Developer'; }
   66% { content: 'Machine Learning Enthusiast'; }
   100% { content: 'Java Enthusiast'; }
 }
+
 .Animation:after {
   display: inline;
-  color: var(--accent-clr);
+  color: var(--accent-clr); /* Accent color for the animation text */
   content: 'Suhas Koheda';
   animation: Namechanger 5s infinite;
 }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: var(--accent-clr); /* Color for code elements */
 }

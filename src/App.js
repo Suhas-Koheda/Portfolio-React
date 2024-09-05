@@ -40,7 +40,7 @@ function App() {
           </h1>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 p-12 gap-20 md:h-screen md:items-center'id='About'>
+      <div className='grid grid-cols-1 md:grid-cols-2 p-12 gap-20 md:h-screen md:items-center border-t'id='About'>
         <div className='flex justify-center'>
           <img src={image} alt='Suhas Koheda' className='rounded-full w-50 h-80 object-cover' />
         </div>
@@ -53,7 +53,7 @@ function App() {
           </p>
         </div>
       </div>
-      <div className='my-12 border-y-accentclr border-t p-12'id='Skills'>
+      <div className='my-12  border-t p-12'id='Skills'>
         <div className=' flex flex-col justify-normal items-center text-center font-semibold font-lora'>
           <h4 className=' text-2xl'>Skills</h4>
           <h2 className='text-l'>That give me Happiness and Money 😎</h2>
@@ -66,7 +66,7 @@ function App() {
                         Hibernate.</p>
                 </div>
                 <div className="p-4 sm:my-8">
-                    <h3 className=" p-0 md:p-4 text-center flex justify-center shadow-xl shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue h-16 items-center">Full Stack Web Developer</h3>
+                    <h3 className=" p-0 md:p-4 text-center flex justify-center shadow-xl shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue h-16 md:h-14 items-center">Full Stack Web Developer</h3>
                     <p className='py-4 md:py-12'>Designed and developed full-stack web applications using modern technologies. Experienced in both
                         front-end (React, HTML/CSS) and back-end (Node.js, Express) development, ensuring seamless user
                         experiences and server-side functionality.</p>
@@ -85,14 +85,14 @@ function App() {
                 </div>
             </div>
         </div>
-        <div className='my-12 border-y-accentclr border-t p-12'>
+        <div className='my-12  border-t p-12'>
         <div className=' flex flex-col justify-normal items-center text-center font-semibold font-lora'>
           <h4 className=' text-2xl font-semibold'>Stacks I Know</h4>
           <h2 className='text-l'>Tools I Have Been Using Over Time for My Development</h2>
         </div>
         <div className='grid col-1 md:flex md:justify-around'>
-        <div className="flex flex-col text-center items-center md:p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                    <h4 className="shadow-xl  md:shadow-custom-zeal ">Languages</h4>
+        <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
+                    <h4 className="shadow-xl  md:shadow-custom-zeal p-4">Languages</h4>
                     <div className="flex p-4 justify-center">
                         <img src="https://www.svgrepo.com/show/452234/java.svg" alt="Java" 
                              className="w-28 p-4"/>
@@ -103,7 +103,7 @@ function App() {
                     </div>
                 </div>
                 <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                    <h4 className="shadow-xl  md:shadow-custom-zeal">Design</h4>
+                    <h4 className="shadow-xl  md:shadow-custom-zeal p-4">Design</h4>
                     <div className="flex p-4 justify-center">
                         <img src="https://www.svgrepo.com/show/452202/figma.svg" alt="Figma" width="500" height="600"
                              className="w-28 p-4"/>
@@ -112,7 +112,7 @@ function App() {
                     </div>
                 </div>
                 <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                    <h4 className="shadow-xl  md:shadow-custom-zeal ">Containers</h4>
+                    <h4 className="shadow-xl  md:shadow-custom-zeal p-4 ">Containers</h4>
                     <div className="flex  justify-center p-4">
                         <img src="https://www.svgrepo.com/show/452192/docker.svg" alt="Figma" width="500" height="600"
                              className="w-28 p-4"/>
@@ -120,8 +120,8 @@ function App() {
                 </div>
             </div>
             <div className=" grid col-1 md:flex justify-around">
-                <div className="flex flex-col  justify-center text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                    <h4 className="shadow-xl  md:shadow-custom-zeal ">Version Control</h4>
+            <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
+                    <h4 className="shadow-xl  md:shadow-custom-zeal p-4">Version Control</h4>
                     <div className="flex  justify-center  p-4">
                         <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Figma" width="500" height="600"
                              className="w-28 p-4"/>
@@ -130,15 +130,15 @@ function App() {
                              className="w-28 p-4"/>
                     </div>
                 </div>
-                <div className="flex flex-col   justify-center text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                    <h4 className="shadow-xl  md:shadow-custom-zeal ">Database</h4>
+                <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
+                    <h4 className="shadow-xl  md:shadow-custom-zeal p-4">Database</h4>
                     <div className="flex  justify-center  p-4">
                         <img src="https://www.svgrepo.com/show/373845/mongo.svg" alt="Figma" width="500" height="600"
                              className="w-28 p-4"/>
                     </div>
                 </div>
                 <div className="flex flex-col text-center p-12 shadow-xl  shadow-custom-zeal hover:shadow-inner hover:shadow-custom-blue my-12">
-                   <h4 className="shadow-xl md:shadow-custom-zeal">IDE's</h4>
+                   <h4 className="shadow-xl md:shadow-custom-zeal p-4">IDE's</h4>
                     <div className="flex   justify-center p-4">
                         <img src="https://www.svgrepo.com/show/353906/intellij-idea.svg" alt="Figma" width="500"
                              height="600"
@@ -149,7 +149,7 @@ function App() {
                 </div>
         </div>
         </div>
-        <div className="text-center py-6" id="Projects">
+        <div className="text-center py-6 border-t" id="Projects">
   <h2 className="text-3xl font-bold mb-4">Some of my Projects</h2>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 md:p-8">
