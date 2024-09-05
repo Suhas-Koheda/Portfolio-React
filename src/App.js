@@ -18,9 +18,9 @@ function App() {
     <div>
       <nav className='text-center p-0 md:flex md:justify-around md:p-0'>
       <img src="   https://cdn-icons-png.flaticon.com/512/10381/10381028.png " alt='Suhas Koheda' className='rounded-full w-10 h-8 object-cover fixed mr-0 right-0 md:hidden' onClick={handleToggle}/>
-        <div><h3 className='text-2xl font-serif'>Suhas Koheda</h3></div>
+        <div><h3 className='text-2xl font-serif bg-secclr'>Suhas Koheda</h3></div>
         {isVisible && (
-      <div className="text-center p-12 md:flex md:justify-end gap-28 md:p-0">
+      <div className="text-center p-12 md:flex md:justify-end gap-28 md:p-0 bg-secclr">
                     <div className="p-8 md:p-0">
                         <a href="#About" className="-content">About Me</a>
                     </div>
